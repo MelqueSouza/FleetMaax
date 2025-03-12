@@ -1,67 +1,169 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# FleetMax
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Introdução
 
-## About Laravel
+A gestão de frotas é essencial para empresas que dependem do transporte de mercadorias e serviços. O FleetMax surge como uma solução para centralizar e otimizar a administração de veículos, motoristas e rotas, garantindo eficiência e organização nas operações logísticas.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Problemática
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+O gerenciamento manual de frotas pode levar a inconsistências nos dados, alocações inadequadas de veículos e dificuldades no planejamento de rotas. Sem um sistema centralizado, a consulta e a atualização de informações tornam-se morosas e propensas a erros, impactando a eficiência da operação e a tomada de decisões estratégicas.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Solução
 
-## Learning Laravel
+O FleetMax é uma plataforma web que simplifica a gestão de frotas, permitindo:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+-   Cadastro e administração de motoristas, caminhões e rotas.
+-   Associação de motoristas a veículos e rotas específicas.
+-   Consulta e gerenciamento eficiente de informações logísticas.
+-   Interface intuitiva para facilitar a adoção pelos usuários.
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+Embora a versão inicial não inclua monitoramento em tempo real ou integração com APIs externas, a plataforma foi projetada para ser escalável e adaptável a futuras necessidades.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## Stacks do Projeto
 
-## Laravel Sponsors
+Para garantir um desenvolvimento eficiente e estruturado, as seguintes tecnologias foram escolhidas:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### **Gerenciamento de Atividades e Controle de Versão**
 
-### Premium Partners
+-   **Trello**: Aplicação do método Kanban para organização das tarefas.
+-   **GitHub**: Controle de versão para colaboração entre desenvolvedores.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+### **Front-end**
 
-## Contributing
+-   **HTML**: Estruturação das páginas da aplicação.
+-   **Tailwind CSS**: Framework CSS para estilização rápida e responsiva.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### **Back-end**
 
-## Code of Conduct
+-   **PHP**: Linguagem principal para o desenvolvimento do servidor.
+-   **Laravel**: Framework para estruturação do back-end, suporte a ORM (Eloquent) e criação de APIs.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+### **Banco de Dados**
 
-## Security Vulnerabilities
+-   **MySQL**: Armazenamento e gerenciamento dos dados do sistema.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### **Ferramentas de DevOps**
 
-## License
+-   **Docker**: Para criação de ambientes isolados e consistentes.
+-   **GitHub Actions**: Automação de testes e CI/CD.
+-   **NGINX/Apache**: Servidor web para requisições da aplicação.
+-   **Monitoramento e Logs** (Futuro): Grafana e Prometheus para análise de desempenho.
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-# FleetMaax
+## Backlog do Projeto
+
+O desenvolvimento do FleetMax está estruturado em épicos e tarefas organizadas por funcionalidades principais:
+
+### **Épico 1: Cadastro de Usuários**
+
+-   [ ] Criar tela de login com validação de credenciais.
+-   [ ] Implementar autenticação com Laravel.
+-   [ ] Criar recuperação de senha via e-mail.
+-   [ ] Validação de CNPJ.
+
+### **Épico 2: Cadastro e Gerenciamento de Frotas**
+
+-   [ ] Criar banco de dados para caminhões.
+-   [ ] Desenvolver formulário de cadastro.
+-   [ ] Implementar edição e exclusão de caminhões.
+-   [ ] Criar banco de dados para motoristas.
+-   [ ] Criar interface de cadastro e gerenciamento de motoristas.
+-   [ ] Implementar listagem e filtros de motoristas e caminhões.
+
+### **Épico 3: Gestão de Rotas**
+
+-   [ ] Criar banco de dados para rotas.
+-   [ ] Desenvolver formulário de cadastro.
+-   [ ] Implementar edição e exclusão de rotas.
+-   [ ] Criar vínculo entre motoristas, caminhões e rotas.
+-   [ ] Criar interface para listagem de rotas.
+-   [ ] Implementar filtros de busca.
+
+### **Épico 4: Relatórios e Monitoramento**
+
+-   [ ] Criar geração de relatórios em PDF/Excel.
+-   [ ] Desenvolver filtros personalizados para relatórios.
+-   [ ] Criar dashboard com informações gerais do sistema.
+-   [ ] Implementar alertas automáticos para eventos críticos.
+
+Aqui está o README atualizado considerando o uso do Laravel com Tailwind via Vite:
+
+---
+
+## 🚀 Como Executar o Projeto
+
+### 📥 1. Clone o repositório
+
+```bash
+git clone https://github.com/IcaroMoreira4/FleetMax.git
+```
+
+### 📂 2. Acesse a pasta do projeto
+
+```bash
+cd FleetMax
+```
+
+### ⚙️ 3. Instale as dependências do Laravel
+
+```bash
+composer install
+```
+
+### 🛠 4. Configure o ambiente
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+Edite o arquivo `.env` para configurar a conexão com o banco de dados.
+
+### 🗄️ 5. Configure o banco de dados e execute as migrações
+
+```bash
+php artisan migrate
+```
+
+### 📦 6. Instale as dependências do Node.js
+
+```bash
+npm install
+```
+
+### 🏗️ 7. Inicie o projeto
+
+Abra **dois terminais** e execute os seguintes comandos:
+
+**Terminal 1 (Servidor Laravel)**
+
+```bash
+php artisan serve
+```
+
+**Terminal 2 (Vite para compilar Tailwind e JS)**
+
+```bash
+npm run dev
+```
+
+### 🌐 8. Acesse a aplicação no navegador
+
+[http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+---
+
+Caso precise gerar os arquivos CSS e JS para produção, utilize:
+
+```bash
+npm run build
+```
+
+## Contribuição
+
+Para contribuir com o projeto:
+
+1. Faça um fork do repositório.
+2. Crie uma branch para a funcionalidade desejada: `git checkout -b minha-feature`
+3. Faça o commit das suas alterações: `git commit -m 'Adiciona nova funcionalidade'`
+4. Envie suas alterações: `git push origin minha-feature`
+5. Abra um Pull Request.
