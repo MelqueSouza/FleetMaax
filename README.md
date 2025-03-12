@@ -94,7 +94,7 @@ Aqui está o README atualizado considerando o uso do Laravel com Tailwind via Vi
 ### 📥 1. Clone o repositório
 
 ```bash
-git clone https://github.com/IcaroMoreira4/FleetMax.git
+git clone https://github.com/IcaroMoreira4/FleetMaax.git
 ```
 
 ### 📂 2. Acesse a pasta do projeto
