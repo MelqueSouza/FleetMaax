@@ -15,8 +15,11 @@ Route::get('/login', function () {
     return view('auth.login');
 })->name('login');
 
-// Grupo de rotas protegidas (somente usuários autenticados)
+/*
+// 🔒 Grupo de rotas protegidas (somente usuários autenticados)
+// ❗ Removido temporariamente para permitir acesso sem login durante o desenvolvimento
 Route::middleware('auth')->group(function () {
+*/
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
@@ -36,4 +39,11 @@ Route::middleware('auth')->group(function () {
     Route::get('/rotas', function () {
         return view('rotas.index');
     })->name('rotas');
+/*
 });
+*/
+
+// 📌 Como reativar a proteção por login depois?
+// 1️⃣ Descomente o bloco `Route::middleware('auth')->group(function () {` e `});` 
+// 2️⃣ Implemente a autenticação para os usuários no back-end
+// 3️⃣ As páginas protegidas só poderão ser acessadas por usuários logados
