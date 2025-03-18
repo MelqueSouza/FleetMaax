@@ -6,30 +6,70 @@
   <title>Home Page</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   @vite('resources/css/app.css')
+  @vite(['resources/js/app.js'])
+
 </head>
 <body class="bg-slate-900 h-screen flex flex-col ">
 
     <div class="relative flex flex-1">
-        <!-- Sidebar -->
-        <aside class="absolute top-0 left-0 bottom-0 w-20 bg-yellow-500 flex flex-col items-center justify-items-center">
 
-          <img class="w-14 py-3" src="{{ asset('assets/images/logoSideBar.svg') }}" alt="">
+          <!-- Sidebar Pequena -->
+    <aside id="sidebar" class="absolute top-0 left-0 bottom-0 w-20 bg-yellow-500 flex flex-col items-center transition-all duration-500 overflow-hidden">
+        <img id="sidebar-logo" class="w-14 py-3" src="{{ asset('assets/images/logoSideBar.svg') }}" alt="">
 
-          <nav class="mt-24">
-            <ul class="flex items-center justify-items-center text-3xl text-gray-800 flex-col gap-6">
-              <li><i class="fas fa-home"></i></li>
-              <li><i class="fas fa-file-alt"></i></li>
-              <li><i class="fas fa-truck"></i></li>
-              <li><i class="fas fa-route"></i></li>
-              <li><i class="fas fa-folder"></i></li>
-              <li><i class="fas fa-user"></i></li>
-            </ul>
-          </nav>
-        </aside>
+        <nav class="mt-24">
+            <div class="flex items-center text-3xl text-gray-800 flex-col gap-8">
+                <i id="menu-toggle" class="fas fa-bars text-white cursor-pointer hover:scale-125 hover:text-gray-500 transition-all duration-300"></i>
 
-        <div class="flex flex-col flex-1 ml-20">
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-home"></i></a>
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-file-alt"></i></a>
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-truck"></i></a>
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-route"></i></a>
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-folder"></i></a>
+                <a class="hover:translate-x-1 hover:text-gray-500" href="#"><i class="fas fa-user"></i></a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- Sidebar Grande -->
+    <aside id="sidebar-expanded" class="absolute top-0 left-0 bottom-0 w-48 bg-yellow-500 flex flex-col transition-all duration-500 overflow-hidden">
+      <img class="p-3 w-44" src="{{ asset('assets/images/logoSideBarClick.png') }}" alt="">
+
+        <nav class="mt-24">
+            <div class="flex text-3xl text-gray-800 flex-col gap-8 p-3">
+                <i id="menu-close" class="fas fa-bars text-white cursor-pointer transition-all duration-300 origin-left hover:scale-125 hover:text-gray-500"></i>
+                
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-home"></i>
+                    <p class="text-lg">Dashboard</p>
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-file-alt"></i>
+                    <p class="text-lg">Motorista</p>
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-truck"></i>
+                    <p class="text-lg">Caminhão</p>
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-route"></i>
+                    <p class="text-lg">Rotas</p>
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-folder"></i>
+                    <p class="text-lg">Relatórios</p>
+                </a>
+                <a href="#" class="flex items-center gap-2 hover:translate-x-1 hover:text-gray-500">
+                    <i class="fas fa-user"></i>
+                    <p class="text-lg">Informações dos Motoristas</p>
+                </a>
+            </div>
+        </nav>
+    </aside>
+
+        <div id="main-header" class="flex flex-col flex-1 ml-20">
             <!-- Header -->
-            <header class="relative bg-white h-12 w-full flex items-center justify-between p-2.5 shadow-lg">
+            <header class="relative bg-white h-12 w-full flex items-center justify-between p-2.5 shadow-lg ">
               <a class="flex items-center gap-1.5 p-2 transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-red-500" href="">
                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 <p>Sair</p>
