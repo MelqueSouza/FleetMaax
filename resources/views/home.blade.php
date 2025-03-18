@@ -67,7 +67,7 @@
         </nav>
     </aside>
 
-        <div id="main-header" class="flex flex-col flex-1 ml-20">
+        <div id="main-header" class="flex flex-col flex-1 ml-48">
             <!-- Header -->
             <header class="relative bg-white h-12 w-full flex items-center justify-between p-2.5 shadow-lg ">
               <a class="flex items-center gap-1.5 p-2 transition-all duration-300 ease-in-out hover:translate-x-1 hover:text-red-500" href="">
