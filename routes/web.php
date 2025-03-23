@@ -43,6 +43,10 @@ Route::middleware('auth')->group(function () {
     Route::get('/rotas', function () {
         return view('rotas.index');
     })->name('rotas');
+
+    Route::get('/home', function() {
+        return view('layouts.index');
+    })->name('home');
 /*
 });
 */
