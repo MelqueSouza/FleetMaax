@@ -8,7 +8,7 @@
 </head>
 <body>
     
-<div class="flex items-center justify-center min-h-[calc(100vh-140px)] bg-slate-900 relative">
+<div class="flex items-center justify-center min-h-[calc(100vh-140px)] bg-slate-800 relative">
         
         <div class="absolute top-4 left-4">
             <img src="{{ asset('assets/images/logoHome.png') }}" alt="Logo Home" class="h-22">

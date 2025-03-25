@@ -9,7 +9,7 @@
   @vite(['resources/js/app.js'])
 
 </head>
-<body class="h-screen bg-slate-900 ">
+<body class="h-screen bg-slate-800 ">
 
   <div class="flex justify-between items-center p-4">
     <img src="{{ asset('assets/images/logoHome.png') }}" alt="">
@@ -21,7 +21,7 @@
   </picture>
   
   <div class="grid items-start justify-items-center h-[120px]">
-    <button type="button" class="text-slate-900 bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-600 shadow-lg shadow-yellow-600/50 dark:shadow-lg dark:shadow-yellow-600/80 font-bold rounded-xl text-lg px-8 py-3.5 text-center me-2 mb-2">Faça seu cadastro aqui</button>
+    <button type="button" class="text-slate-800 bg-gradient-to-r from-yellow-500 via-yellow-600 to-yellow-400 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-yellow-300 dark:focus:ring-yellow-600 shadow-lg shadow-yellow-600/50 dark:shadow-lg dark:shadow-yellow-600/80 font-bold rounded-xl text-lg px-8 py-3.5 text-center me-2 mb-2">Faça seu cadastro aqui</button>
   </div>
 
 <!-- Footer -->
