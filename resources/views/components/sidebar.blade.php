@@ -1,4 +1,4 @@
-<aside id="sidebar" class="absolute top-0 left-0 bottom-0 w-20 bg-yellow-500 flex flex-col items-center transition-all duration-500 overflow-hidden">
+<aside id="sidebar" class="fixed top-0 left-0 bottom-0 w-20 bg-yellow-500 flex flex-col items-center transition-all duration-500 overflow-hidden">
     <img id="sidebar-logo" class="w-14 py-3" src="{{ asset('assets/images/logoSideBar.svg') }}" alt="">
 
     <nav class="mt-24">
@@ -51,12 +51,12 @@
 </aside>
 
 <script>
-    document.getElementById('menu-toggle').addEventListener('click', function () {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
         document.getElementById('sidebar').classList.add('hidden');
         document.getElementById('sidebar-expanded').classList.remove('hidden');
     });
 
-    document.getElementById('menu-close').addEventListener('click', function () {
+    document.getElementById('menu-close').addEventListener('click', function() {
         document.getElementById('sidebar-expanded').classList.add('hidden');
         document.getElementById('sidebar').classList.remove('hidden');
     });
