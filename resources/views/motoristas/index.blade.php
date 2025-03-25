@@ -20,13 +20,22 @@
 
       <!-- Conteúdo Principal -->
       <main class="flex-1 p-4">
-        <!-- titulo com detalhe do lado -->
-        <div class="flex items-center space-x-3 bg-gray-900 p-4 rounded-lg">
-          <span class="w-1 h-12 bg-gradient-to-b from-yellow-500 to-emerald-300"></span>
-          <h1 class="text-white text-5xl">Motoristas</h1>
-        </div>
+        <!-- Container do título e botão -->
+    <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
+  <!-- Título com detalhe lateral -->
+  <div class="flex items-center space-x-3">
+    <span class="w-1 h-12 bg-gradient-to-b from-yellow-500 to-emerald-300"></span>  
+    <h1 class="text-white text-5xl">Motoristas</h1>  
+  </div>
 
-        <!-- tabela -->
+  <!-- Botão alinhado à direita -->
+  <button class="bg-yellow-500 hover:bg-yellow-700 text-slate-800 font-bold py-2 px-4 border border-yellow-700 rounded">
+    Novo Motorista +
+  </button>
+</div>
+
+        
+<!-- tabela -->
         <div class="max-w-full">
           <div class="grid grid-cols-7 bg-gray-900 text-white text-xl font-bold p-3">
             <p>ID</p>
