@@ -51,6 +51,11 @@ Route::get('/home', function () {
 Route::get('/relatorios', function () {
     return view('relatorios.index');
 })->name('relatorios');
+
+Route::get('/relatorios/detalhado', function () {
+    return view('relatorios.detalhado');
+})->name('relatorios.detalhado');
+
 /*
 });
 */
