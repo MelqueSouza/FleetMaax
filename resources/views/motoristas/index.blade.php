@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home Page</title>
+  <title>Motorista</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   @vite('resources/css/app.css')
   @vite(['resources/js/app.js'])
@@ -21,21 +21,21 @@
       <!-- Conteúdo Principal -->
       <main class="flex-1 p-4">
         <!-- Container do título e botão -->
-    <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
-  <!-- Título com detalhe lateral -->
-  <div class="flex items-center space-x-3">
-    <span class="w-1 h-12 bg-gradient-to-b from-yellow-500 to-emerald-300"></span>  
-    <h1 class="text-white text-5xl">Motoristas</h1>  
-  </div>
+        <div class="flex items-center justify-between bg-gray-900 p-4 rounded-lg">
+          <!-- Título com detalhe lateral -->
+          <div class="flex items-center space-x-3">
+            <span class="w-1 h-12 bg-gradient-to-b from-yellow-500 to-emerald-300"></span>
+            <h1 class="text-white text-5xl">Motoristas</h1>
+          </div>
 
-  <!-- Botão alinhado à direita -->
-  <button class="bg-yellow-500 hover:bg-yellow-700 text-slate-800 font-bold py-2 px-4 border border-yellow-700 rounded">
-    Novo Motorista +
-  </button>
-</div>
+          <!-- Botão alinhado à direita -->
+          <button class="bg-yellow-500 hover:bg-yellow-700 text-slate-800 font-bold py-2 px-4 border border-yellow-700 rounded">
+            Novo Motorista +
+          </button>
+        </div>
 
-        
-<!-- tabela -->
+
+        <!-- tabela -->
         <div class="max-w-full">
           <div class="grid grid-cols-7 bg-gray-900 text-white text-xl font-bold p-3">
             <p>ID</p>
@@ -53,7 +53,7 @@
               <p>049.787.367-22</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>16/02/1997</p>
-              
+
               <button class="bg-lime-500 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-lime-900 active:scale-95 shadow-md hover:shadow-lg">
                 Ativo
               </button>
@@ -64,7 +64,7 @@
               <p>603.194.884-20</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>02/10/2001</p>
-              
+
               <button class="bg-lime-500 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-lime-900 active:scale-95 shadow-md hover:shadow-lg">
                 Ativo
               </button>
@@ -76,7 +76,7 @@
               <p>186.962.414-95</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>09/11/2005</p>
-              
+
               <button class="bg-red-600 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-800 active:scale-95 shadow-md hover:shadow-lg">
                 Inativo
               </button>
@@ -88,7 +88,7 @@
               <p>626.343.534-80</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>25/11/2014</p>
-              
+
               <button class="bg-red-600 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-800 active:scale-95 shadow-md hover:shadow-lg">
                 Inativo
               </button>
@@ -100,7 +100,7 @@
               <p>959.678.342-49</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>02/02/2023</p>
-              
+
               <button class="bg-red-600 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-red-800 active:scale-95 shadow-md hover:shadow-lg">
                 Inativo
               </button>
@@ -112,7 +112,7 @@
               <p>076.754.367-77</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>25/11/2014</p>
-              
+
               <button class="bg-lime-500 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-lime-900 active:scale-95 shadow-md hover:shadow-lg">
                 Ativo
               </button>
@@ -123,7 +123,7 @@
               <p>186.962.414-95</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>09/11/2005</p>
-            
+
               <button class="bg-lime-500 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-lime-900 active:scale-95 shadow-md hover:shadow-lg">
                 Ativo
               </button>
@@ -135,7 +135,7 @@
               <p>626.343.534-80</p>
               <p class="text-blue-500 hover:text-blue-800 cursor-pointer">Visualize a CNH</p>
               <p>16/02/1997</p>
-              
+
               <button class="bg-lime-500 text-white font-bold rounded w-1/3 text-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-lime-900 active:scale-95 shadow-md hover:shadow-lg">
                 Ativo
               </button>
@@ -145,37 +145,88 @@
           </div>
         </div>
 
-        <!-- Navegação entre tabelas -->
-        <div class="inline-flex items-center border border-gray-400 rounded-lg overflow-hidden shadow-md bg-white mt-4">
-          <!-- Botão Anterior -->
-          <button class="px-4 py-2 border-r border-gray-400 text-black flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 active:scale-95 hover:text-yellow-500 hover:font-bold">
-            <i class="fas fa-chevron-left mr-2"></i> Anterior
-          </button>
-
-          <!-- Páginas -->
-          <button class="px-4 py-2 border-r border-gray-400 text-black transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 active:scale-95 hover:text-yellow-500 hover:font-bold">
-            1
-          </button>
-          <button class="px-4 py-2 border-r border-gray-400 text-black transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 active:scale-95 hover:text-yellow-500 hover:font-bold">
-            2
-          </button>
-          <button class="px-4 py-2 border-r border-gray-400 text-black transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 active:scale-95 hover:text-yellow-500 hover:font-bold">
-            3
-          </button>
-
-          <!-- Botão Próximo -->
-          <button class="px-4 py-2 text-black flex items-center transition-all duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-200 active:scale-95 hover:text-yellow-500 hover:font-bold">
-            Próximo <i class="fas fa-chevron-right ml-2"></i>
-          </button>
-        </div>
+ <x-table-browser />
 
 
       </main>
     </div>
   </div>
 
+
+
+  <!-- Novo Motorista -->
+  <div id="modal" class="fixed inset-0 flex items-center justify-center bg-gray-700/80 hidden z-50 ">
+    <div class="bg-gray-200 mx-6 my-10 w-1/2 h-[85%]">
+      <div class="flex justify-between m-6">
+        <h1 class="text-yellow-500 text-5xl">Novo Motorista</h1>
+        <img src="{{ asset('assets/images/logoModal.png') }}" alt="Logo" class="h-18">
+      </div>
+
+      <div class="py-4">
+        <form action="" method="post">
+          <div class="space-y-4 mx-6">
+            <div>
+              <label for="nome_completo" class="py-2 text-xl">Nome completo</label>
+              <input type="text" name="nome_completo" id="nome_completo" placeholder="Nome completo" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label for="cpf" class="py-2 text-xl">CPF</label>
+              <input type="text" name="cpf" id="cpf" placeholder="CPF" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label for="cnh" class="py-2 text-xl">CNH</label>
+              <input type="text" name="cnh" id="cnh" placeholder="CNH" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label for="data_nascimento" class="py-2 text-xl">Data de Nascimento</label>
+              <input type="date" name="data_nascimento" id="data_nascimento" placeholder="Data de Nascimento" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label for="email" class="py-2 text-xl">E-mail</label>
+              <input type="email" name="email" id="email" placeholder="E-mail" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+            <div>
+              <label for="telefone" class="py-2 text-xl">Telefone</label>
+              <input type="tel" name="telefone" id="telefone" placeholder="(XX) XXXXX-XXXX" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500" maxlength="15">
+            </div>
+            <div>
+              <label for="data_admissao" class="py-2 text-xl">Data de Admissão</label>
+              <input type="date" name="data_admissao" id="data_admissao" placeholder="Data de Admissão" class="px-4 py-1 w-full border rounded-lg text-gray-400 focus:outline-none focus:ring-2 focus:ring-yellow-500">
+            </div>
+          </div>
+
+          <div class="flex justify-end py-16 mx-6">
+            <button type="submit" class="bg-yellow-500 text-xl rounded-full w-60 py-3 px-4 hover:bg-yellow-700 focus:outline-none focus:ring-2 focus:ring-yellow-500">Novo Motorista</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
   <!-- Footer -->
   <x-footer />
+
+
+  <script>
+    // Obter elementos do formulario e do botão
+    const modal = document.getElementById('modal');
+    const btnNovaRota = document.querySelector('button.bg-yellow-500'); // O botão "Novo Motorista"
+
+    // Função para abrir o formulario
+    btnNovaRota.addEventListener('click', () => {
+      modal.classList.remove('hidden');
+    });
+
+    // Fechar o formulario clicando fora da área
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.classList.add('hidden');
+      }
+    });
+  </script>
+
 </body>
 
 </html>
