@@ -56,6 +56,9 @@ Route::get('/relatorios/detalhado', function () {
     return view('relatorios.detalhado');
 })->name('relatorios.detalhado');
 
+Route::get('/rotas/detalhada', function () {
+    return view('rotas.detalhada');
+})->name('rotas.detalhada');
 /*
 });
 */
