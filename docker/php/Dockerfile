@@ -23,4 +23,8 @@ COPY . .
 # Instala as dependências do Laravel
 RUN composer install && chmod -R 777 storage bootstrap/cache
 
+RUN docker-php-ext-install opcache
+
+COPY ./docker/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
+
 CMD ["php-fpm"]
